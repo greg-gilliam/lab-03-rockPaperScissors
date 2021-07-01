@@ -1,1 +1,17 @@
 /* add home page styles here */ 
+input[type=radio]{
+    display: none;
+}
+
+img {
+    width: 100px;
+}
+
+input[type=radio]:checked + img {
+    border: 5px solid yellow;
+}
+
+input[type=radio]:not(:checked) + img:hover {
+    opacity: 50%;
+    cursor: pointer
+}
