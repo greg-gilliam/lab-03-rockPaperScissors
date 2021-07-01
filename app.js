@@ -3,6 +3,7 @@ import { didUserWin } from './utils.js';
 const playButton = document.getElementById('play');
 const winsSpan = document.getElementById('total-wins');
 const lossesSpan = document.getElementById('total-losses');
+const drawsSpan = document.getElementById('total-draws');
 
 let wins = 0;
 let losses = 0;
@@ -37,5 +38,6 @@ playButton.addEventListener('click', ()=>{
     }
     winsSpan.textContent = wins;
     lossesSpan.textContent = losses;
+    drawsSpan.textContent = draws; 
 
 });
