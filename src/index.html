@@ -21,24 +21,26 @@
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <div class="logo-container">
-                <img class="main-logo" src="./assets/alchemy-logo.png" />
-                <img class="main-logo ts-logo" src="./assets/typescript.png" />
-            </div>
-            <h2>
-                Welcome to Alchemy Bootstrap, TypeScript Edition!
-            </h2>
-            <section>
-                <p>
-                    <a href="./about/index.html">About</a>
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos, minima fugit aperiam omnis
-                    hic repellendus saepe magni veritatis et provident beatae libero quos sapiente at officia voluptatum
-                    quo non.
-                </p>
-            </section>
+            <h1>
+                Let's play: Rock! Paper! Scissors!
+            </h1>
+        <div class ="choices"></div>    
+        <label>
+            <input name = "rock" type = "radio" value = "rock" checked> 
+            <img src="assets/smilingRock.png" alt="smiling rock">
+        </label>
+        <label>
+            <input name = "paper" type = "radio" value = "paper"> 
+            <img src="assets/paper.jpeg" alt="smiling paper">
+        </label>
+        <label>
+            <input name = "scissors" type = "radio" value = "scissors"> 
+            <img src="assets/scissors.png" alt="smiling scissors">
+        </label>
+        <button id="play">Let's Play!</button>
+        <div>Total Wins: <span id="total-wins">0</span></div>
+        <div>Total Losses: <span id="total-losses">0</span></div>
+        </div>   
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
