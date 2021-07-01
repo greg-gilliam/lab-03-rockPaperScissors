@@ -17,6 +17,6 @@ export function didUserWin(userChoice, computerChoice){
     if (userChoice === 'paper' && computerChoice === 'rock'){
         return 'you win!';
     }
-    else (userChoice === 'paper' && computerChoice === 'scissors');
-    return 'you lose!';
+    if (userChoice === 'paper' && computerChoice === 'scissors')
+        return 'you lose!';
 }
